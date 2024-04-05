@@ -126,7 +126,6 @@
   }
   .modal__container {
     max-width: 600px;
-    min-width: 50%;
     width: auto;
   }
 }

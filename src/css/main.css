@@ -154,6 +154,8 @@ html.dark-theme .sidebar-links a:hover svg {
   display: flex;
   flex: 50%;
   padding: 1.5rem 2rem;
+  max-height: 90vh;
+  overflow-y: scroll;
 }
 
 #modal-versions .colset .col-right {
@@ -222,8 +224,8 @@ html.dark-theme #modal-versions .colset .col-right {
 }
 
 #modal-versions .current {
-  background-color: #80ea6e;
-  color: #111;
+  background-color: var(--psi-green-1);
+  color: white;
   align-items: center;
   border-radius: 4px;
   display: inline-block;
@@ -237,6 +239,7 @@ html.dark-theme #modal-versions .colset .col-right {
   margin-left: 0.75rem !important;
   text-transform: uppercase;
   font-weight: 700;
+  visibility: hidden;
 }
 
 #modal-versions .modal-versions-close {

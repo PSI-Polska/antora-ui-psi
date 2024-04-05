@@ -93,7 +93,8 @@ body {
 }
 
 .navbar-item,
-.navbar-link {
+.navbar-link,
+.item-in-navbar {
   color: var(--navbar-menu-font-color);
   display: block;
   line-height: var(--doc-line-height);
@@ -210,14 +211,16 @@ body {
   }
 
   .navbar-item,
-  .navbar-link {
+  .navbar-link,
+  .item-in-navbar {
     display: flex;
     position: relative;
     flex: none;
   }
 
   .navbar-item:not(.has-dropdown),
-  .navbar-link {
+  .navbar-link,
+  .item-in-navbar {
     align-items: center;
   }
 
@@ -264,10 +267,11 @@ body {
     left: 0;
     position: absolute;
     background: var(--navbar-menu-background);
-    width: 230px;
+    width: auto;
+    min-width: 230px;
     padding: 1rem;
     border-radius: 6px;
-    box-shadow: var(--navbar-menu-boxshadow, 0 5px 30px 0 rgb(108 135 135 / 50%));
+    box-shadow: var(--navbar-menu-boxshadow);
     pointer-events: none;
     opacity: 0;
     transition-duration: 86ms;

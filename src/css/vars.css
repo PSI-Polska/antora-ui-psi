@@ -14,6 +14,22 @@
   --color-jet-80: #191919;
   --color-black: #000;
 
+  /* PSI Colors */
+  --psi-green-1: rgb(181, 212, 58);
+  --psi-green-2: rgb(206, 227, 124);
+  --psi-green-3: rgb(225, 238, 175);
+  --psi-green-4: rgb(236, 245, 204);
+  --psi-grey-1: rgb(148, 148, 148);
+  --psi-grey-2: rgb(187, 187, 187);
+  --psi-grey-3: rgb(212, 212, 211);
+  --psi-grey-4: rgb(231, 231, 231);
+  --psi-red-danger: rgb(239, 75, 75);
+  --psi-yellow-warning: rgb(255, 211, 37);
+  --psi-green-alpha-20: rgba(181, 212, 58, 0.2);
+  --psi-green-alpha-40: rgba(181, 212, 58, 0.4);
+  --psi-green-alpha-60: rgba(181, 212, 58, 0.6);
+  --psi-green-alpha-80: rgba(181, 212, 58, 0.8);
+
   /* Fonts */
   --rem-base: 18; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
   --body-font-size: 1.0625em; /* 17px */
@@ -23,6 +39,14 @@
   --body-font-family: "Open Sans", sans;
   --body-font-weight-bold: 600;
   --monospace-font-weight-bold: 600;
+  --nav-title-font-size: calc(24 / var(--rem-base) * 1rem);
+  --h1-font-size: calc(38 / var(--rem-base) * 1rem);
+  --h2-font-size: calc(34 / var(--rem-base) * 1rem);
+  --h3-font-size: calc(30 / var(--rem-base) * 1rem);
+  --h4-font-size: calc(26 / var(--rem-base) * 1rem);
+  --h5-font-size: calc(22 / var(--rem-base) * 1rem);
+  --h6-font-size: calc(20 / var(--rem-base) * 1rem);
+  --page-title-font-size: calc(44 / var(--rem-base) * 1rem);
 
   /* General */
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -31,22 +55,22 @@
   --monospace-font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", monospace;
   --body-background-color: white;
   --body-background: var(--body-background-color);
-  --panel-background-color: #f6f8fa;
+  --panel-background-color: var(--body-background-color);
   --panel-background: var(--panel-background-color);
   --panel-group-background-color: #e1e8e8;
   --panel-border-color: #eaedf0;
-  --color-accent-1: #ebf2f2;
-  --color-accent-1-hover: #d3dddd;
+  --color-accent-1: #efefef;
+  --color-accent-1-hover: #dadada;
   --color-accent-2: #d7e7e7;
-  --color-accent-3: #6db33f;
+  --color-accent-3: var(--psi-green-1);
   --body-font-color: #191e1e;
   --body-font-light-color: #273030;
   --body-font-dark-color: #141818;
-  --link-font-color: #1565c0;
-  --link_hover-font-color: #104d92;
+  --link-font-color: var(--psi-green-1);
+  --link_hover-font-color: var(--psi-green-1);
   --code-link-font-color: var(--link-font-color);
   --scrollbar-thumb-color: silver;
-  --mark-background-color: #80ea6e;
+  --mark-background-color: var(--psi-green-1);
   --selected-background-color: #191e1e;
 
   /* Layout */
@@ -57,15 +81,15 @@
   --admonition-background: var(--color-accent-1);
   --admonition-label-font-weight: var(--body-font-weight-bold);
   --admonition-font-color: #f0f0f0;
-  --caution-color: #561164;
+  --caution-color: var(--psi-red-danger);
   --caution-on-color: var(--admonition-font-color);
-  --important-color: #960000;
+  --important-color: var(--psi-red-danger);
   --important-on-color: var(--admonition-font-color);
-  --note-color: #015785;
+  --note-color: var(--psi-green-1);
   --note-on-color: var(--admonition-font-color);
-  --tip-color: #3e6b1f;
+  --tip-color: var(--psi-green-1);
   --tip-on-color: var(--admonition-font-color);
-  --warning-color: #bd7400;
+  --warning-color: var(--psi-yellow-warning);
   --warning-on-color: var(--admonition-font-color);
   --admonition-font-weight: 500;
 
@@ -127,7 +151,7 @@
 
   /* Navbar */
   --navbar-background: var(--body-background-color);
-  --navbar-font-color: #var(--body-font-color);
+  --navbar-font-color: var(--body-font-color);
   --navbar_hover-background: var(--navbar-background);
   --navbar-button-background: var(--color-white);
   --navbar-button-border-color: var(--panel-border-color);
@@ -145,6 +169,7 @@
   --nav-muted-color: var(--color-gray-70);
   --nav-panel-divider-color: var(--color-smoke-90);
   --nav-secondary-background: var(--color-smoke-70);
+  --navbar-menu-boxshadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
 
   /* Toolbar */
   --toolbar-background: var(--color-white);
@@ -174,8 +199,9 @@
   --abstract-font-color: var(--color-jet-20);
   --abstract-border-color: var(--panel-border-color);
   --caption-font-color: var(--body-font-light-color);
-  --caption-font-weight: 400;
-  --code-background: rgba(177, 209, 241, 0.15);
+  --caption-font-weight: 700;
+  --caption-font-style: oblique;
+  --code-background: var(--psi-green-alpha-20);
   --code-font-color: var(--body-font-color);
   --example-background: var(--panel-background);
   --example-border-color: var(--panel-border-color);
@@ -248,7 +274,6 @@
 /* DARK THEME */
 
 html.dark-theme {
-
   /* General */
   --font-weight: 300;
   --body-background-color: #1b1f23;
@@ -260,23 +285,23 @@ html.dark-theme {
   --color-accent-1: #272c33;
   --color-accent-1-hover: #434d5c;
   --color-accent-2: #2d333a;
-  --color-accent-3: #6db33f;
+  --color-accent-3: var(--psi-green-1);
   --body-font-color: #bbbcbe;
   --body-font-light-color: #abacaf;
   --body-font-dark-color: #cecfd1;
-  --link-font-color: #086dc3;
-  --link_hover-font-color: #107ddd;
+  --link-font-color: var(--psi-green-1);
+  --link_hover-font-color: var(--psi-green-1);
   --scrollbar-thumb-color: #5f5f5f;
-  --mark-background-color: #2eca12;
+  --mark-background-color: var(--psi-green-1);
   --selected-background-color: #e5e5e5;
 
   /* Admonitions */
   --admonition-font-color: #f0f0f0;
-  --caution-color: #603668;
-  --important-color: #924040;
-  --note-color: #355463;
-  --tip-color: #4d6340;
-  --warning-color: #967745;
+  --caution-color: var(--psi-red-danger);
+  --important-color: var(--psi-red-danger);
+  --note-color: var(--psi-green-1);
+  --tip-color: var(--psi-green-1);
+  --warning-color: var(--psi-yellow-warning);
   --admonition-font-weight: 500;
 
   /* Highlight JS (colors based on https://github.com/primer/github-syntax-dark) */
@@ -317,7 +342,6 @@ html.dark-theme {
   --nav-muted-color: #aaa;
   --nav-panel-divider-color: rgba(255, 255, 255, 0.2);
   --nav-secondary-background: var(--body-background-color);
-  --navbar-menu-boxshadow: 0 5px 30px 0 rgb(0 0 0 0 / 50%);
 
   /* Toolbar */
   --toolbar-background: var(--body-background-color);
