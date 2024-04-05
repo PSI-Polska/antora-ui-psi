@@ -331,3 +331,56 @@ a.ais-Hits-item:hover {
     border-right-width: 1px;
   }
 }
+
+#search-input {
+  background: var(--body-background-color);
+  border: 1px solid var(--color-gray-10);
+  border-radius: 4px;
+  color: var(--body-font-dark-color);
+  display: block;
+  font-size: var(--body-font-size);
+  line-height: 1.5;
+  margin-left: auto;
+  margin-top: auto;
+  padding: 0 0.25em;
+  position: relative;
+  width: auto;
+}
+
+.search-result-dataset {
+  position: relative;
+  border: 1px solid var(--panel-background) !important;
+  background: var(--body-background) !important;
+  border-radius: 4px;
+  overflow: auto;
+  padding: 8px;
+  max-height: calc(100vh - 5.25rem);
+  line-height: 1.5;
+}
+
+.search-result-document-hit {
+  color: var(--body-font-color) !important;
+}
+
+.search-result-document-hit:hover {
+  background: var(--psi-green-alpha-20) !important;
+}
+
+.search-result-document-hit .search-result-highlight {
+  color: var(--psi-green-1) !important;
+  background: var(--psi-green-alpha-20) !important;
+  padding: 0.1em 0.05em;
+  font-weight: 500;
+}
+
+.search-result-component-header {
+  color: var(--body-font-color) !important;
+}
+
+.search-result-document-title {
+  color: var(--body-font-color) !important;
+}
+
+.search-result-dropdown-menu {
+  box-shadow: var(--navbar-menu-boxshadow) !important;
+}

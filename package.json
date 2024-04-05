@@ -1,8 +1,10 @@
 {
-  "name": "antora-ui-spring",
-  "description": "Produces the UI bundle for projects on docs.spring.io that are built with Antora",
+  "name": "antora-ui-psi",
+  "version": "1.0.0",
+  "description": "Produces the UI bundle that are built with Antora",
   "homepage": "https://docs.spring.io",
   "license": "MPL-2.0",
+  "files": ["build/ui-bundle.zip"],
   "repository": {
     "type": "git",
     "url": "https://github.com/spring-io/antora-ui-spring"
@@ -22,7 +24,6 @@
     "@asciidoctor/tabs": "1.0.0-beta.6",
     "@docsearch/js": "3",
     "@springio/asciidoctor-extensions": "1.0.0-alpha.8",
-    "algoliasearch": "4",
     "autoprefixer": "~10.4",
     "browser-pack-flat": "~3.5",
     "browserify": "~17.0",
@@ -53,6 +54,7 @@
     "instantsearch.js": "^4.54.1",
     "js-yaml": "~4.1",
     "merge-stream": "~2.0",
+    "medium-zoom": "^1.1.0",
     "micromodal": "^0.4.10",
     "mocha": "~10.2",
     "postcss": "~8.4",
@@ -68,7 +70,9 @@
     "vinyl-fs": "~3.0"
   },
   "dependencies": {
-    "@algolia/client-search": "^4.17.0",
     "@primer/octicons": "^19.8.0"
+  },
+  "publishConfig": {
+    "registry": "https://com-npm.psi.de/repository/npm-repo/"
   }
 }

@@ -156,14 +156,12 @@ html.is-clipped--nav {
 .nav-link:hover,
 .nav-text:hover {
   text-decoration: none;
-  background: #ebf2f2;
-  color: #06c;
+  background: var(--psi-green-alpha-20);
 }
 
 .dark-theme .nav-link:hover,
 .dark-theme .nav-text:hover {
-  color: #1f98ff;
-  background: #262a2d;
+  background: var(--psi-green-alpha-20);
 }
 
 .is-current-page > .nav-link,
@@ -180,10 +178,9 @@ html.is-clipped--nav {
 }
 
 .nav-panel-menu .context .title {
+  font-size: var(--nav-title-font-size);
   font-weight: bold;
   display: block;
-  height: 24px;
-  line-height: 24px;
   padding-right: 30px;
   margin-bottom: 4px;
   white-space: nowrap;
@@ -220,8 +217,8 @@ html.dark-theme button.browse-version:hover {
 
 .nav-panel-menu .context .version {
   display: inline-block;
-  background-color: #80ea6e;
-  color: #111;
+  background-color: var(--psi-green-1);
+  color: white;
   align-items: center;
   border-radius: 4px;
   font-size: calc(12 / var(--rem-base) * 1rem);

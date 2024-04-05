@@ -139,7 +139,7 @@ mark {
 /* Apply first header style directly since our breadcrumbs break :first-child */
 
 .doc > h1#page-title {
-  font-size: calc(42 / var(--rem-base) * 1rem);
+  font-size: var(--page-title-font-size);
   margin: 0.8rem 0 0.2rem 0;
 }
 
@@ -274,9 +274,7 @@ mark {
 /* Tweak table style to always used striped tables */
 
 .doc table.grid-all > * > tr > * {
-  border: none;
-  border-top: 1px solid var(--table-border-color);
-  border-bottom: 1px solid var(--table-border-color);
+  border: 1px solid var(--table-border-color);
 }
 
 .doc table.grid-all > tbody > tr:hover {
