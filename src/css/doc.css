@@ -32,8 +32,28 @@
 }
 
 .doc > h1.page:first-child {
-  font-size: calc(36 / var(--rem-base) * 1rem);
+  font-size: var(--h1-font-size);
   margin: 1.5rem 0;
+}
+
+.doc h2 {
+  font-size: var(--h2-font-size);
+}
+
+.doc h3 {
+  font-size: var(--h3-font-size);
+}
+
+.doc h4 {
+  font-size: var(--h4-font-size);
+}
+
+.doc h5 {
+  font-size: var(--h5-font-size);
+}
+
+.doc h6 {
+  font-size: var(--h6-font-size);
 }
 
 @media screen and (min-width: 769px) {
@@ -251,6 +271,14 @@
 
 .doc table.tableblock {
   font-size: calc(15 / var(--rem-base) * 1rem);
+}
+
+span.image {
+  transition: all 0.25s ease-in-out;
+}
+
+.doc img:hover {
+  filter: brightness(90%);
 }
 
 .doc p.tableblock + p.tableblock {
@@ -648,18 +676,22 @@
   padding: 0;
 }
 
-.doc .admonitionblock .title,
-.doc .exampleblock .title,
-.doc .imageblock .title,
-.doc .literalblock .title,
-.doc .listingblock .title,
-.doc .openblock .title,
-.doc .videoblock .title,
+.title,
 .doc table.tableblock caption {
   color: var(--caption-font-color);
   font-size: calc(16 / var(--rem-base) * 1rem);
   font-style: var(--caption-font-style);
   font-weight: var(--caption-font-weight);
+  hyphens: none;
+  letter-spacing: 0.01em;
+  padding-bottom: 10px;
+}
+
+.doc .listingblock .title {
+  color: var(--color-gray-70);
+  font-size: calc(16 / var(--rem-base) * 1rem);
+  font-style: italic;
+  font-weight: 550;
   hyphens: none;
   letter-spacing: 0.01em;
   padding-bottom: 0.075rem;
