@@ -1,6 +1,7 @@
 {
-  "name": "antora-ui-spring",
-  "description": "Produces the UI bundle for projects on docs.spring.io that are built with Antora",
+  "name": "antora-ui-psi",
+  "version": "1.0.0",
+  "description": "Produces the UI bundle that are built with Antora",
   "homepage": "https://docs.spring.io",
   "license": "MPL-2.0",
   "repository": {
