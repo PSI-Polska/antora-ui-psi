@@ -22,11 +22,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                dir('./community-modules/angular') {
-                    sh ('npm install -g gulp-cli')
-                    sh ('npm install')
-                    sh ('gulp bundle')
-                }
+                  sh ('npm install -g gulp-cli')
+                  sh ('npm install')
+                  sh ('gulp bundle')
             }
         }
         stage('Publish') {
