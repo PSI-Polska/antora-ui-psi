@@ -4,14 +4,6 @@ pipeline {
     agent any
 
     parameters {
-        validatingString(
-            name: 'versionTag',
-            description: 'Custom tag for pushing maven, npm and docker artifacts and/or running test application.',
-            defaultValue: defaultVersionTag,
-            regex: /^(?:[a-zA-Z0-9_][\.\_\-a-zA-Z0-9]{0,127})?$/,
-            failedValidationMessage: "128 characters at most. " +
-                "Lowercase and uppercase letters, digits, underscores, periods and dashes."
-        )
         booleanParam(
             name: 'release',
             description: 'Release (available only from develop branch)',
