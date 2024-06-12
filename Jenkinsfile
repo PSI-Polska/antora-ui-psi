@@ -29,8 +29,7 @@ pipeline {
                 }
             }
         }
-
-        stage('Create tag') {
+        stage('Publish') {
             when {
                 allOf {
                     branch 'develop'
@@ -40,15 +39,8 @@ pipeline {
                 }
             }
             steps {
-                script {
-                    withCredentials(
-                        [gitUsernamePassword(credentialsId: 'ad-service-user-psi', gitToolName: 'DEFAULT')]
-                    ) {
-                        sh """
-                            git tag -fm 'Tagged by Jenkins' ${params.versionTag}
-                            git push -f origin ${params.versionTag}
-                        """
-                    }
+                withCredentials([string(credentialsId: 'npm-config-token', variable: 'NPM_TOKEN')]){
+                    sh('npm publish')
                 }
             }
         }
