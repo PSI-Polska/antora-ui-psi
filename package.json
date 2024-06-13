@@ -4,6 +4,7 @@
   "description": "Produces the UI bundle that are built with Antora",
   "homepage": "https://docs.spring.io",
   "license": "MPL-2.0",
+  "files": ["public/_"],
   "repository": {
     "type": "git",
     "url": "https://github.com/spring-io/antora-ui-spring"
