@@ -1,8 +1,8 @@
 pipeline {
     agent any
     tools {
-            maven 'Maven 3.6.3'
-            jdk 'jdk17'
+            maven 'Maven'
+            jdk 'DEFAULT'
     }
     parameters {
         booleanParam(
