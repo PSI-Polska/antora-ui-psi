@@ -1,8 +1,8 @@
 pipeline {
     agent any
     tools {
-            maven 'Maven'
-            jdk 'DEFAULT'
+             maven 'DEFAULT'
+             jdk 'JDK 17 Adoptium'
     }
     parameters {
         booleanParam(
