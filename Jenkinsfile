@@ -31,7 +31,8 @@ pipeline {
                     }
                     steps {
                         sh """
-                            mvn -B deploy:deploy-file -Dversion=1.0.0 -Dfile="build/ui-bundle.zip" -DrepositoryId=community-deploy -Durl=https://nexus.comdev.psi.de/repository/tools
+                            mvn -B deploy:deploy-file -Dversion=1.0.0 -Dfile="build/ui-bundle.zip" -DrepositoryId=community-deploy -Durl=https://nexus.comdev.psi.de/repository/tools \
+                            -DgroupId=antora -DartifactId=antora-ui -Dpackaging=zip
                         """
                     }
         }
