@@ -1,6 +1,9 @@
 pipeline {
     agent any
-
+    tools {
+            maven 'Maven 3.6.3'
+            jdk 'jdk17'
+    }
     parameters {
         booleanParam(
             name: 'release',
@@ -27,7 +30,6 @@ pipeline {
                         }
                     }
                     steps {
-                        input(message: "Proceed with deployment?")
                         sh """
                             mvn -B deploy:deploy-file -Dversion=1.0.0 -Dfile="build/ui-bundle.zip" -DrepositoryId=community-deploy -Durl=https://nexus.comdev.psi.de/repository/tools
                         """
