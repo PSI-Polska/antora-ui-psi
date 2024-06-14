@@ -17,20 +17,22 @@ pipeline {
                   sh ('gulp bundle')
             }
         }
-        stage('Publish') {
-            when {
-                allOf {
-                    branch 'develop'
-                    expression {
-                        params.release == true
+        stage('Deploy to nexus') {
+                    when {
+                        allOf {
+                            branch 'develop'
+                            expression {
+                                params.release == true
+                            }
+                        }
                     }
-                }
-            }
-            steps {
-                withCredentials([string(credentialsId: 'npm-config-token', variable: 'NPM_TOKEN')]){
-                    sh('npm publish')
-                }
-            }
+                    steps {
+                        input(message: "Proceed with deployment?")
+                        sh """
+                            mvn -B deploy:deploy-file -Dversion=1.0.0 -Dfile="build/ui-bundle.zip" -DrepositoryId=community-deploy -Durl=https://nexus.comdev.psi.de/repository/tools
+                        """
+                    }
         }
+
     }
 }
