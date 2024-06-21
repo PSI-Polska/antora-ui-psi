@@ -63,7 +63,7 @@ prompt> exit
 
 [cols=",,",options="header",]
 |===
-|*Property* **(**prefix ** de.psi.pjf.alrt**)** |*Description*
+|*Property*  |*Description*
 |*Default*
 |_autoregistration_ |Enables/disables event type auto-registration.
 |_true_
