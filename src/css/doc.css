@@ -229,7 +229,7 @@
 }
 
 .doc .small {
-  font-size: smaller;
+  font-size: 12px;
 }
 
 .doc .underline {
@@ -684,7 +684,6 @@ span.image {
   font-weight: var(--caption-font-weight);
   hyphens: none;
   letter-spacing: 0.01em;
-  padding-bottom: 10px;
 }
 
 .doc .listingblock .title {
