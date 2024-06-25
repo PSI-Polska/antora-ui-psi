@@ -93,7 +93,8 @@ body {
 }
 
 .navbar-item,
-.navbar-link {
+.navbar-link,
+.item-in-navbar {
   color: var(--navbar-menu-font-color);
   display: block;
   line-height: var(--doc-line-height);
@@ -210,14 +211,15 @@ body {
   }
 
   .navbar-item,
-  .navbar-link {
+  .navbar-link,
+  .item-in-navbar{
     display: flex;
     position: relative;
     flex: none;
   }
 
   .navbar-item:not(.has-dropdown),
-  .navbar-link {
+  .navbar-link, .item-in-navbar {
     align-items: center;
   }
 
