@@ -212,14 +212,15 @@ body {
 
   .navbar-item,
   .navbar-link,
-  .item-in-navbar{
+  .item-in-navbar {
     display: flex;
     position: relative;
     flex: none;
   }
 
   .navbar-item:not(.has-dropdown),
-  .navbar-link, .item-in-navbar {
+  .navbar-link,
+  .item-in-navbar {
     align-items: center;
   }
 
