@@ -13,7 +13,7 @@ footer.footer {
 }
 
 .footer a {
-  color: var(--footer-link-font-color);
+  color: #999;
 }
 
 .footer a:hover {
@@ -22,4 +22,12 @@ footer.footer {
 
 .footer .has-gray-text {
   color: #b5b5b5;
+}
+
+.copyright_level1 {
+  color: #6c757d;
+}
+
+.copyright_level2 {
+  color: #b3b3b3;
 }
