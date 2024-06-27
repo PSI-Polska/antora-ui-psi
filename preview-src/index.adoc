@@ -3,7 +3,6 @@
 Antora UI Spring theme.
 
 This is a sample text compared to headers
-
 == H2
 === H3
 ==== H4
