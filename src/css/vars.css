@@ -39,7 +39,7 @@
   --body-font-family: "Open Sans", sans;
   --body-font-weight-bold: 600;
   --monospace-font-weight-bold: 600;
-  --nav-title-font-size: calc(24 / var(--rem-base) * 1rem);
+  --nav-title-font-size: calc(20 / var(--rem-base) * 1rem);
   --h1-font-size: calc(38 / var(--rem-base) * 1rem);
   --h2-font-size: calc(34 / var(--rem-base) * 1rem);
   --h3-font-size: calc(30 / var(--rem-base) * 1rem);
@@ -49,7 +49,7 @@
   --page-title-font-size: calc(44 / var(--rem-base) * 1rem);
 
   /* General */
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family: "Roboto", sans-serif;
   --font-family-special: "Metropolis", "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-weight: 400;
   --monospace-font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", monospace;
