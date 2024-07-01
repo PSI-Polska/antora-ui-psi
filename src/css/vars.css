@@ -228,6 +228,9 @@
   --footer-background: var(--body-background-color);
   --footer-font-color: var(--color-gray-30);
   --footer-link-font-color: #111;
+  --footer-link-font-color2: #999;
+  --footer-copyright_level1: #6c757d;
+  --footer-copyright_level2: #b3b3b3;
 
   /* Dimensions and Positioning */
   --navbar-height: calc(83 / var(--rem-base) * 1rem);
