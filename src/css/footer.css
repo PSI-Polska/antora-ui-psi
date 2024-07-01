@@ -13,7 +13,7 @@ footer.footer {
 }
 
 .footer a {
-  color: #999;
+  color: var(--footer-link-font-color2);
 }
 
 .footer a:hover {
@@ -25,9 +25,9 @@ footer.footer {
 }
 
 .copyright_level1 {
-  color: #6c757d;
+  color: var(--footer-copyright_level1);
 }
 
 .copyright_level2 {
-  color: #b3b3b3;
+  color: var(--footer-copyright_level2);
 }
