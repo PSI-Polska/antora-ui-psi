@@ -1,26 +1,21 @@
-<div class="nav-panel-explore{{#unless page.navigation}} is-active{{/unless}}" data-panel="explore">
-  {{#if page.component}}
-    <div class="context">
-      <span class="title">{{page.component.title}}</span>
-      <span class="version">{{#if (or page.componentVersion.version (ne page.componentVersion.displayVersion 'default'))}}{{page.componentVersion.displayVersion}}{{/if}}</span>
-    </div>
-  {{/if}}
-  <ul class="components">
-    {{#each site.components}}
-      <li class="component{{#if (eq this @root.page.component)}} is-current{{/if}}">
-        <div class="title"><a href="{{{relativize ./url}}}">{{{./title}}}</a></div>
-        {{#if (or ./versions.[1] ./versions.[0].version (ne ./versions.[0].displayVersion 'default'))}}
-          <ul class="versions">
-            {{#each ./versions}}
-              <li class="version
-          {{~#if (and (eq .. @root.page.component) (eq this @root.page.componentVersion))}} is-current{{/if~}}
-                {{~#if (eq this ../latest)}} is-latest{{/if}}">
-                <a href="{{{relativize ./url}}}">{{./displayVersion}}</a>
-              </li>
-            {{/each}}
-          </ul>
-        {{/if}}
-      </li>
-    {{/each}}
-  </ul>
+<div class="context">
+  <span class="title"><a href="index.html">{{page.component.title}}</a></span>
+  <span class="version">{{page.componentVersion.displayVersion}}</span>
+  <button class="browse-version" id="browse-version">
+    <svg
+      height="24px"
+      id="Layer_1"
+      style="enable-background:new 0 0 512 512;"
+      version="1.1"
+      viewBox="0 0 512 512"
+      width="24px"
+      xml:space="preserve"
+    ><g><path
+          d="M256,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S273.7,224,256,224L256,224z"
+        ></path><path
+          d="M128.4,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S146,224,128.4,224L128.4,224z"
+        ></path><path
+          d="M384,224c-17.7,0-32,14.3-32,32s14.3,32,32,32s32-14.3,32-32S401.7,224,384,224L384,224z"
+        ></path></g></svg>
+  </button>
 </div>
