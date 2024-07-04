@@ -13,14 +13,17 @@
                       <a class="title" href="{{{relativize ./url}}}">{{{./title}}}</a>
                       <ul class="versions">
                         {{#each ./versions}}
-                        <li class="version
-                          {{~#if (and (eq .. @root.page.component) (eq this @root.page.componentVersion))}} is-current{{/if~}}
-                          {{~#if (eq this ../latest)}} is-latest{{/if}}">
-                          <a href="{{{relativize ./url}}}">
-                            {{./displayVersion}}
-                            {{~#if (eq this ../latest)}}<span class="current">current</span>{{/if}}
-                          </a>
-                        </li>
+                          {{~#if (ne ./displayVersion 'default')}}
+                            <li class="version
+                              {{~#if (and (eq .. @root.page.component) (eq this @root.page.componentVersion))}} is-current{{/if~}}
+                              {{~#if (eq this ../latest)}} is-latest{{/if}}">
+
+                              <a href="{{{relativize ./url}}}">
+                                {{./displayVersion}}
+                                {{~#if (eq this ../latest)}}<span class="current">current</span>{{/if}}
+                              </a>
+                            </li>
+                          {{/if~}}
                         {{/each}}
                       </ul>
                     </li>

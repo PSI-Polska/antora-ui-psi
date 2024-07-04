@@ -67,7 +67,7 @@
   --body-font-light-color: #273030;
   --body-font-dark-color: #141818;
   --link-font-color: var(--psi-green-1);
-  --link_hover-font-color: var(--psi-green-1);
+  --link_hover-font-color: #104d92;
   --code-link-font-color: var(--link-font-color);
   --scrollbar-thumb-color: silver;
   --mark-background-color: var(--psi-green-1);
@@ -85,7 +85,7 @@
   --caution-on-color: var(--admonition-font-color);
   --important-color: var(--psi-red-danger);
   --important-on-color: var(--admonition-font-color);
-  --note-color: var(--psi-green-1);
+  --note-color: #217ee7;
   --note-on-color: var(--admonition-font-color);
   --tip-color: var(--psi-green-1);
   --tip-on-color: var(--admonition-font-color);
@@ -201,7 +201,7 @@
   --caption-font-color: var(--body-font-light-color);
   --caption-font-weight: 700;
   --caption-font-style: oblique;
-  --code-background: var(--psi-green-alpha-20);
+  --code-background: var(--panel-background);
   --code-font-color: var(--body-font-color);
   --example-background: var(--panel-background);
   --example-border-color: var(--panel-border-color);
@@ -290,7 +290,7 @@ html.dark-theme {
   --body-font-light-color: #abacaf;
   --body-font-dark-color: #cecfd1;
   --link-font-color: var(--psi-green-1);
-  --link_hover-font-color: var(--psi-green-1);
+  --link_hover-font-color: #104d92;
   --scrollbar-thumb-color: #5f5f5f;
   --mark-background-color: var(--psi-green-1);
   --selected-background-color: #e5e5e5;
@@ -299,7 +299,7 @@ html.dark-theme {
   --admonition-font-color: #f0f0f0;
   --caution-color: var(--psi-red-danger);
   --important-color: var(--psi-red-danger);
-  --note-color: var(--psi-green-1);
+  --note-color: #217ee7;
   --tip-color: var(--psi-green-1);
   --warning-color: var(--psi-yellow-warning);
   --admonition-font-weight: 500;

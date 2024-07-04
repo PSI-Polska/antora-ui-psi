@@ -2,12 +2,14 @@
 
 Antora UI Spring theme.
 
-This is a sample text compared to headers
+This is a `sample text` compared to headers
 == H2
 === H3
 ==== H4
 ===== H5
 ====== H6
+
+NOTE: test
 
 Image sample:
 
