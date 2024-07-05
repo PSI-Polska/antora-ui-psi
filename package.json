@@ -71,8 +71,5 @@
   },
   "dependencies": {
     "@primer/octicons": "^19.8.0"
-  },
-  "publishConfig": {
-    "registry": "https://com-npm.psi.de/repository/npm-repo/"
   }
 }
