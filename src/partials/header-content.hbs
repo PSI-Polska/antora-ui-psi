@@ -81,5 +81,5 @@
   if (theme === 'dark') {
     document.getElementById('switch-theme-checkbox').parentElement.classList.add('active')
   }
-}('light')
+}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)')?.matches && 'dark'))
 </script>
