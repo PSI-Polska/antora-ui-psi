@@ -80,8 +80,6 @@
 !function (theme) {
   if (theme === 'dark') {
     document.getElementById('switch-theme-checkbox').parentElement.classList.add('active')
-    document.documentElement.classList.toggle('dark-theme', true)
-    document.documentElement.setAttribute('data-theme', theme)
   }
-}(window.localStorage?.getItem('theme'))
+}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)')?.matches && 'dark'))
 </script>
