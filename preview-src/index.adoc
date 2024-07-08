@@ -3,13 +3,15 @@
 Antora UI Spring theme.
 
 This is a `sample text` compared to headers
-== H2
-=== H3
-==== H4
-===== H5
-====== H6
 
-NOTE: test
+== H1 First degree header
+== H2 Second degree header
+=== H3 Third degree header
+==== H4 Fourth degree header
+===== H5 Fifth degree header
+====== H6 Sixth degree header
+
+NOTE: Example note
 
 Image sample:
 
