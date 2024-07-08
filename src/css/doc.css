@@ -679,12 +679,9 @@ span.image {
 .title,
 .doc table.tableblock caption {
   color: var(--caption-font-color);
-  font-size: calc(16 / var(--rem-base) * 1rem);
-  font-style: var(--caption-font-style);
   font-weight: var(--caption-font-weight);
   hyphens: none;
   letter-spacing: 0.01em;
-  padding-bottom: 10px;
 }
 
 .doc .listingblock .title {
