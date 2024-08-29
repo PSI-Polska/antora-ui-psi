@@ -37,6 +37,7 @@ a:hover {
 
 a:active {
   background-color: none;
+  color: var(--link-active-font-color);
 }
 
 code,

@@ -140,6 +140,10 @@
   color: var(--link_hover-font-color);
 }
 
+.doc a:active {
+  color: var(--link-active-font-color);
+}
+
 .doc a.bare {
   hyphens: none;
 }

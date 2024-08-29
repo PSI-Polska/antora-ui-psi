@@ -193,14 +193,15 @@ button.browse-version {
   outline: none;
   line-height: inherit;
   position: absolute;
-  background-color: var(--body-background-color);
   height: calc(var(--nav-line-height) * 1.5em);
-  width: 36px;
+  width: 28px;
   margin-left: calc(var(--nav-line-height) * -1em);
   right: 12px;
   top: 15px;
   border-radius: 4px;
   padding-top: 4px;
+  background-image: url(../img/list-toggle-default.svg);
+  background-repeat: no-repeat;
 }
 
 button.browse-version svg {
@@ -208,7 +209,11 @@ button.browse-version svg {
 }
 
 button.browse-version:hover {
-  background-color: #ebf2f2;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+button.browse-version:active {
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 html.dark-theme button.browse-version:hover {
