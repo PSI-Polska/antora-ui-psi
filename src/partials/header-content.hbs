@@ -1,7 +1,7 @@
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://psi.de">
+      <a class="navbar-item" href="https://docs.comdev.psi.de/">
         <img
           id="springlogo"
           class="block"
@@ -18,8 +18,8 @@
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
         {{> search}}
-        <a class="item-in-navbar" href="{{site.keys.docsServer}}/index.html">PJF Documentation</a>
-        <a class="item-in-navbar" href="{{site.keys.docsServer}}/common-docs/index.html">Common Documentation</a>
+        <a class="item-in-navbar" href="{{{relativize site.homeUrl}}}">Home page</a>
+        <a class="item-in-navbar" href="https://docs.comdev.psi.de/">All documentation</a>
       </div>
     </div>
     <label class="theme-toggler">

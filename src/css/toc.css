@@ -71,6 +71,10 @@
   text-decoration: none;
 }
 
+.toc .toc-menu a:active {
+  color: var(--link-active-font-color);
+}
+
 .toc .toc-menu a:hover {
   color: var(--link-font-color);
 }

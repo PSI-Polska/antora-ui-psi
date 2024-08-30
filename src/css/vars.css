@@ -66,8 +66,9 @@
   --body-font-color: #191e1e;
   --body-font-light-color: #273030;
   --body-font-dark-color: #141818;
-  --link-font-color: var(--psi-green-1);
-  --link_hover-font-color: #104d92;
+  --link-font-color: #819916;
+  --link_hover-font-color: #a1bf1b;
+  --link-active-font-color: #6c8012;
   --code-link-font-color: var(--link-font-color);
   --scrollbar-thumb-color: silver;
   --mark-background-color: var(--psi-green-1);

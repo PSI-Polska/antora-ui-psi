@@ -197,6 +197,10 @@ html.dark-theme #modal-versions .colset .col-right {
   color: var(--link-font-color);
 }
 
+#modal-versions a:active {
+  color: var(--link-active-font-color);
+}
+
 #modal-versions ul li.component > a.title {
   color: var(--body-font-dark-color);
 }
