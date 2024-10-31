@@ -3,13 +3,12 @@
     <div
       class="toc"
       data-title="{{{detag page.title}}}"
-      data-levels="{{{or page.attributes.toclevels 2}}}"
-    >
+      data-levels="{{{or page.attributes.toclevels 2}}}">
       <div class="toc-menu"></div>
     </div>
-    {{!-- <div class="sidebar-links">
-      {{#if (and page.fileUri (not env.CI))}}
-        <a href="{{page.fileUri}}">
+    <div class="sidebar-links">
+      {{#if page.attributes.docsrequesturl}}
+        <a href="{{page.attributes.docsrequesturl}}">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24"
@@ -18,45 +17,9 @@
           ><path
               d="m16 2.012 3 3L16.713 7.3l-3-3zM4 14v3h3l8.299-8.287-3-3zm0 6h16v2H4z"
             ></path></svg>
-          Edit this Page
-        </a>
-      {{else if (and
-        page.editUrl
-        (or env.FORCE_SHOW_EDIT_PAGE_LINK (not page.origin.private))
-      )}}
-        <a href="{{page.editUrl}}">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24"
-            viewBox="0 0 24 24"
-            width="24"
-          ><path
-              d="m16 2.012 3 3L16.713 7.3l-3-3zM4 14v3h3l8.299-8.287-3-3zm0 6h16v2H4z"
-            ></path></svg>
-          Edit this Page
+          Docs request
         </a>
       {{/if}}
-      {{#if page.origin.webUrl}}
-        <a href="{{page.origin.webUrl}}" title="Bitbucket">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24"
-            viewBox="0 0 256 256"
-            width="24"
-          >
-          <path d="M8.308 0A8.202 8.202 0 0 0 .106 9.516l34.819 211.373a11.155 11.155 0 0 0 10.909 9.31h167.04a8.202 8.202 0 0 0 8.201-6.89l34.82-213.752a8.202 8.202 0 0 0-8.203-9.514zm146.616 152.768h-53.315l-14.436-75.42h80.67z"/>
-          </svg>
-          Bitbucket Project
-        </a>
-      {{/if}}
-      {{#if page.attributes.stackoverflow-url}}
-        <a href="{{page.attributes.stackoverflow-url}}">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path
-              d="M290.7 311L95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z"
-            ></path></svg>
-          Stack Overflow
-        </a>
-      {{/if}}
-    </div> --}}
+    </div>
   </div>
 </aside>
