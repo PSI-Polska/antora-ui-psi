@@ -344,3 +344,15 @@ body {
   width: 12px;
   margin-left: 10px;
 }
+
+.draft-style {
+  color: var(--psi-green-1);
+  align-items: center;
+  padding: 0 5rem;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: var(--font-family-special);
+  display: flex;
+  position: relative;
+  flex: none;
+}
